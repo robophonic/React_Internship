@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <title>React Internship</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="Title" content="React Internship" />
+    <meta name="description" content="описание" />
+
+    <meta property="og:type" content="article" />
+    <meta property="og:description" content="описание" />
+    <meta property="og:url" content="" />
+    <meta property="og:sitename" content="" />
+    <meta property="og:title" content="React Internship">
+    <meta property="og:image" content="адрес" />
+    <!--  <link rel="shortcut icon" href="адрес" type="image/x-icon">-->
+    <link rel="stylesheet" href="css/bootstrap-grid.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="/" class="">
+                    <img src="images/logo.svg" alt="logo">
+                </a>
+            </div>
+            <div class="menu">
+                <ul class="nav">
+                    <li class="has_dropdown">
+                        <a href="#" class="inactive">Problem & Challenges</a>
+                        <ul>
+                            <li><a href="#">History</a></li>
+                            <li><a href="#">Problem industry</a></li>
+                            <li><a href="#">Challenge</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_dropdown">
+                        <a href="#" class="inactive">Platform & Foundation </a>
+                        <ul>
+                            <li><a href="#">OUR VISION</a></li>
+                            <li><a href="#">What Makes Us Different</a></li>
+                        </ul>
+                    </li>
+                    <li class="has_dropdown">
+                        <a href="#" class="inactive">Token</a>
+                        <ul>
+                            <li><a href="#">UOP Token</a></li>
+                            <li><a href="#">Token Economics</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="#">OUR OPERATIONS</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="menu_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <main>
+
+        <div class="page_title">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <h1>React Internship</h1>
+                        <p class="h3 blue">Входное задание в интернатуру</p>
+                        <p><b>Тема:</b> git, node, npm, основы html css</p>
+                        <p><b>Цель:</b> изучить базовые функции git, node, npm. Подготовить к дальнейшей работе систему. Определить уровень умения верстки.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="terms">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-10">
+                        <p class="h3 blue center">Обсуждаемый материал: </p>
+                        <div class="row">
+                            <div class="col-lg-11 offset-lg-1">
+                                <div class="terms_box">
+                                    <div class="item">
+                                        <div class="icon_box">
+                                            <img src="images/light.svg" alt="light">
+                                        </div>
+                                        <div class="text">
+                                            <p class="h4">Что такое система контроля версий и зачем она нужна</p>
+                                            <p> Система контроля версий — это система, записывающая изменения в файл или набор файлов в течение времени и позволяющая вернуться позже к определённой версии. </p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon_box">
+                                            <img src="images/light.svg" alt="light">
+                                        </div>
+                                        <div class="text">
+                                            <p class="h4">Git</p>
+                                            <ul>
+                                                <li><b>checkout:</b> используется для копирования файлов из истории в рабочую директорию. Еще можно использовать для переключения между ветками</li>
+                                                <li><b>add:</b> добавляет содержимое рабочей директории в индекс (staging area) для последующего коммита</li>
+                                                <li><b>commit:</b> берёт все данные, добавленные в индекс с помощью "git add", и сохраняет их слепок во внутренней базе данных, а затем сдвигает указатель текущей ветки на этот слепок.</li>
+                                                <li><b>pull:</b> получаем изменения из удалённой ветки и сливаем их в локальный репозиторий последнюю версию</li>
+                                                <li><b>push:</b> отправляет данные в удалённый репозиторий</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon_box">
+                                            <img src="images/light.svg" alt="light">
+                                        </div>
+                                        <div class="text">
+                                            <p class="h4">Основы ветвления и слияния </p>
+                                            <p>За создание новых веток и слияние их воедино отвечает несколько Git команд:</p>
+                                            <ul>
+                                                <li><b>git branch:</b> это своего рода "менеджер веток". Она умеет перечислять ваши ветки, создавать новые, удалять и переименовывать их.</li>
+                                                <li><b>git checkout:</b> для переключения веток и выгрузки их содержимого в рабочую директорию.</li>
+                                                <li><b>git merge:</b> для слияния одной или нескольких веток в текущую. Затем она устанавливает указатель текущей ветки на результирующий коммит.</li>
+                                                <li><b>git mergetool:</b> просто вызывает внешнюю программу слияний, в случае если у вас возникли проблемы слияния.</li>
+                                                <li><b>git log:</b> для просмотра истории коммитов, начиная с самого свежего и уходя к истокам проекта</li>
+                                                <li><b>git stash:</b> для временного сохранения всех незакоммиченных изменений для очистки рабочей директории без необходимости коммитить незавершённую работу в новую ветку.</li>
+                                                <li><b>git tag:</b> для задания постоянной метки на какой-либо момент в истории проекта. Обычно она используется для релизов.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon_box">
+                                            <img src="images/light.svg" alt="light">
+                                        </div>
+                                        <div class="text">
+                                            <p class="h4">что такое nodejs, зачем он нужен и как устанавливать</p>
+                                            <p>Node.js представляет среду выполнения кода на JavaScript, которая построена на основе движка JavaScript Chrome V8, который позволяет транслировать вызовы на языке JavaScript в машинный код. Node.js прежде всего предназначен для создания серверных приложений на языке JavaScript. Хотя также существуют проекты по написанию десктопных приложений (Electron) и даже по созданию кода для микроконтроллеров. Но прежде всего мы говорим о Node.js, как о платформе для создания веб-приложений.</p>
+                                            <p>Для загрузки перейдет на официальный сайт <a href="https://nodejs.org/en/" target="_blank">https://nodejs.org/en/</a>. На главной странице мы сразу увидим две возможные опции для загрузки: самая последняя версия NodeJS и LTS-версия.</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon_box">
+                                            <img src="images/light.svg" alt="light">
+                                        </div>
+                                        <div class="text">
+                                            <p class="h4">Что такое менеджер пакетов, установка npm</p>
+                                            <p>Пакетные менеджеры упрощают использование чужого кода, предоставляя этот код в виде независимых модулей — пакетов.</p>
+                                            <p>npm (англ. Node Package Manager) — менеджер пакетов, входящий в состав Node.js.</p>
+                                            <p>Установка пакета производится при помощи команды <b>npm install</b></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon_box">
+                                            <img src="images/light.svg" alt="light">
+                                        </div>
+                                        <div class="text">
+                                            <p class="h4">Html: теги, структура html страницы, блочные и строчные элементы, списки, таблицы, атрибуты, текст, якоря, ссылки, w3c валидация</p>
+                                            <ul>
+                                                <li><b>HTML-теги</b> — основа языка HTML. Теги используются для разграничения начала и конца элементов в разметке.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <div class="icon_box">
+                                            <img src="images/light.svg" alt="light">
+                                        </div>
+                                        <div class="text">
+                                            <p class="h4">Css: стили, классы, идентификаторы, селекторы, псевдоклассы, псевдоэлементы</p>
+                                            <ul>
+                                                <li><b>Стили</b> представляют собой набор параметров, управляющих видом и положением элементов веб-страницы.</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="footer_menu">
+                    <ul class="nav">
+                        <li class="has_dropdown">
+                            <a href="#" class="inactive">Problem & Challenges</a>
+                            <ul>
+                                <li><a href="#">History</a></li>
+                                <li><a href="#">Problem industry</a></li>
+                                <li><a href="#">Challenge</a></li>
+                            </ul>
+                        </li>
+                        <li class="has_dropdown">
+                            <a href="#" class="inactive">Platform & Foundation </a>
+                            <ul>
+                                <li><a href="#">Our Vision</a></li>
+                                <li><a href="#">What Makes Us Different</a></li>
+                            </ul>
+                        </li>
+                        <li class="has_dropdown">
+                            <a href="#" class="inactive">Token</a>
+                            <ul>
+                                <li><a href="#">UOP Token</a></li>
+                                <li><a href="#">Token Economics</a></li>
+                            </ul>
+                        </li>
+                        <li class="has_dropdown">
+                            <a href="#">OUR OPERATIONS</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="footer_info order-first">
+                    <p class="copyright">Федоров Владислав</p>
+                    <a href="https://github.com/robophonic" target="_blank" class="terms-link">ссылка на github аккаунт</a>
+                    <a href="https://www.figma.com/file/biFld9Yt7dpWURZ2ul3dE0/Utopia-foundation-web-site?node-id=456%3A1721" target="_blank" class="terms-link">ссылка на оригинал дизайна</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
