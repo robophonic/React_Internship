@@ -1,6 +1,6 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
 
-import logo from '../../asserts/images/logo.svg';
+import logo from '../../asserts/images/logo.svg'
 
 class Header extends Component {
   render() {
@@ -84,17 +84,17 @@ class Header extends Component {
           </div>
         </div>
       </header>
-    );
+    )
   }
 }
 
 const OpenMobMenu = () => {
-  document.querySelector('header').classList.toggle('active');
-  document.querySelector('body').classList.toggle('active');
-};
+  document.querySelector('header').classList.toggle('active')
+  document.querySelector('body').classList.toggle('active')
+}
 
 const MobMenuToggle = () => {
-  this.classList.toggle('open');
-};
+  this.classList.toggle('open')
+}
 
-export default Header;
+export default Header

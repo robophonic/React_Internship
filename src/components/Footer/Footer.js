@@ -1,4 +1,11 @@
-import React, { Component } from 'react';
+import React, { Component } from 'react'
+
+const copyright = 'Федоров Владислав'
+const github_text = 'ссылка на github аккаунт'
+const github_link = 'https://github.com/robophonic'
+const design_link =
+  'https://www.figma.com/file/biFld9Yt7dpWURZ2ul3dE0/Utopia-foundation-web-site?node-id=456%3A1721'
+const design_text = 'ссылка на оригинал дизайна'
 
 class Footer extends Component {
   render() {
@@ -32,7 +39,7 @@ class Footer extends Component {
                 </li>
                 <li className="has_dropdown">
                   <a href="\#" rel="noreferrer" className="inactive">
-                    Platform & Foundation{' '}
+                    Platform & Foundation
                   </a>
                   <ul>
                     <li>
@@ -72,28 +79,28 @@ class Footer extends Component {
               </ul>
             </div>
             <div className="footer_info order-first">
-              <p className="copyright">Федоров Владислав</p>
+              <p className="copyright">{copyright}</p>
               <a
-                href="https://github.com/robophonic"
+                href={github_link}
                 rel="noreferrer"
                 target="_blank"
                 className="terms-link"
               >
-                ссылка на github аккаунт
+                {github_text}
               </a>
               <a
-                href="https://www.figma.com/file/biFld9Yt7dpWURZ2ul3dE0/Utopia-foundation-web-site?node-id=456%3A1721"
+                href={design_link}
                 rel="noreferrer"
                 target="_blank"
                 className="terms-link"
               >
-                ссылка на оригинал дизайна
+                {design_text}
               </a>
             </div>
           </div>
         </div>
       </footer>
-    );
+    )
   }
 }
-export default Footer;
+export default Footer
