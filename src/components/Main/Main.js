@@ -3,7 +3,7 @@ import React, { Component } from 'react'
 import light from '../../asserts/images/light.svg'
 
 const title = 'React Internship'
-const sub_title = 'Входное задание в интернатуру'
+const sub_title = 1 + 'Входное задание в интернатуру'
 const theme = (
   <p>
     <b>Тема:</b> git, node, npm, основы html css
