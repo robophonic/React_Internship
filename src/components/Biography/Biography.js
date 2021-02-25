@@ -11,6 +11,7 @@ class Biography extends Component {
       5: { year: '2014', info: 'HTML 5.0', id: '5' },
       6: { year: '1997', info: 'HTML 3.2', id: '7' },
     },
+    sorted: false,
   }
 
   addInfo = () => {
@@ -65,20 +66,27 @@ class Biography extends Component {
 
   //    пузырьком
   onSortJS = () => {
-    const arr = this.state.tableInfo.slice()
-
-    for (var i = 0, endI = arr.length - 1; i < endI; i++) {
-      for (var j = 0, endJ = endI - i; j < endJ; j++) {
-        if (arr[j].year > arr[j + 1].year) {
-          var swap = arr[j].year
-          arr[j].year = arr[j + 1].year
-          arr[j + 1].year = swap
+    const ThisTable = this.state.tableInfo
+    const length = Object.keys(ThisTable).length
+    for (let i = 0; i < length - 1; i += 1) {
+      let firstObj = i
+      for (let j = i + 1; j < length; j += 1) {
+        if (this.state.sorted) {
+          if (ThisTable[j].year > ThisTable[firstObj].year) {
+            firstObj = j
+          }
+        } else if (ThisTable[j].year < ThisTable[firstObj].year) {
+          firstObj = j
         }
       }
+      const element = ThisTable[firstObj]
+      ThisTable[firstObj] = ThisTable[i]
+      ThisTable[i] = element
     }
-
+    console.log('', ThisTable)
     this.setState({
-      tableInfo: arr,
+      tableInfo: ThisTable,
+      sorted: !this.state.sorted,
     })
   }
 
