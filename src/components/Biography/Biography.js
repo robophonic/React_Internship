@@ -51,6 +51,7 @@ class Biography extends Component {
     let newObj = {}
     const ThisTable = this.state.tableInfo
     const keys = Object.keys(ThisTable)
+    console.log(ThisTable)
     if (this.state.sorted) {
       sortedArr = keys.sort((a, b) => ThisTable[b].year - ThisTable[a].year)
     } else {
